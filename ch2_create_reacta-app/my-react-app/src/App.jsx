@@ -11,22 +11,29 @@ import Inputer from "./components/Inputer";
 import WelcomeMessage from "./components/WelcomeMessage";
 import DashBoard from "./components/DashBoard";
 import Notification from "./components/Notification";
+import NameList from "./components/NameList";
+import NameForm from "./components/NameForm";
+import UncontrolledComponent from "./components/UncontrolledComponent";
 function App() {
   return (
     <>
-      <ToggleTheme />
+      <NameForm/>
+      <ToggleTheme/>
       <h1 style={{ color: "yellow" }}>
         This is Sumeya's first React Application.
       </h1>
+      <UncontrolledComponent />
+      <NameList/>
       <WelcomeMessage isLoggedIn={true} />
       <DashBoard isLoggedIn={true} />
-  <Notification hasNewMessages ={true}/>
+      <Notification hasNewMessages={true} />
 
       <Inputer />
       <GreetingInSomali />
       <GreetingInEnglish />
       <Tiriye />
       <Clicker />
+
       <h1 style={{ color: "black", backgroundColor: "white", padding: "20px" }}>
         This is Sumeya's first React Application.
       </h1>
