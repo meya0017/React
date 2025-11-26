@@ -5,6 +5,7 @@ import ApplicantInfo from "./pages/ApplicantInfo";
 import UploadDocs from "./pages/UploadDocs";
 import ReviewSubmit from "./pages/ReviewSubmit";
 import PassportInfo from "./pages/PassportFormPage";
+import Users from "./pages/UserList";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/applicant" element={<ApplicantInfo />} />
           <Route path="/upload" element={<UploadDocs />} />
           <Route path="/review" element={<ReviewSubmit />} />
+          <Route path="/users" element={<Users />} />
         </Routes>
       </main>
     </div>
